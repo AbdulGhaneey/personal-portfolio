@@ -60,7 +60,7 @@ export default function PersonalPortfolio3() {
         <div className="flex items-center gap-4">
           <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-purple-500 via-pink-500 to-indigo-400 shadow-xl ring-1 ring-white/10"></div>
           <div>
-            <h1 className="text-lg font-semibold tracking-wide">Abdul-Ghaniy</h1>
+            <h1 className="text-lg font-semibold tracking-wide">AMOKOMOWO GANIU</h1>
             <p className="text-xs opacity-70">Frontend Developer — Vibe Coding</p>
           </div>
         </div>
@@ -111,7 +111,7 @@ export default function PersonalPortfolio3() {
                   transition={{ delay: 0.15, duration: 0.6 }}
                   className="text-4xl md:text-5xl font-extrabold tracking-tight"
                 >
-                  Abdul-Ghaniy{" "}
+                  AMOKOMOWO GANIU{" "}
                   <span className="ml-3 inline-block px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r from-pink-500 to-indigo-500 text-black/90 shadow-inner">
                     Frontend
                   </span>
@@ -281,7 +281,7 @@ export default function PersonalPortfolio3() {
               </button>
 
               <a
-                href="/cv.pdf"
+                href="AMOKOMOWO_GANIU_CV.pdf"
                 download
                 className="px-4 py-2 rounded-full border border-white/10 hover:bg-white/5 transition"
               >
@@ -291,10 +291,10 @@ export default function PersonalPortfolio3() {
               <div className="ml-auto text-sm opacity-70">
                 Or email:{" "}
                 <a
-                  href="mailto:you@example.com"
+                  href="mailto:abdulghaneeykay17@gmail.com"
                   className="underline hover:text-indigo-400"
                 >
-                  you@example.com
+                  abdulghaneeykay17@gmail.com
                 </a>
               </div>
             </div>
