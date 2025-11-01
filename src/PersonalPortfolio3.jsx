@@ -55,24 +55,23 @@ export default function PersonalPortfolio3() {
   ];
 
   return (
-    <div className="min-h-screen bg-white dark:bg-[#0b1020] text-gray-900 dark:text-gray-100 transition-colors duration-300 font-inter">
-      <header className="max-w-4xl mx-auto p-6 flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-purple-500 via-pink-500 to-indigo-400 shadow-xl ring-1 ring-white/10"></div>
-          <div>
-            <h1 className="text-lg font-semibold tracking-wide">AMOKOMOWO GANIU</h1>
-            <p className="text-xs opacity-70">Frontend Developer — Vibe Coding</p>
+    <div className="min-h-screen w-full bg-white dark:bg-[#0b1020] text-gray-900 dark:text-gray-100 transition-colors duration-300 font-inter overflow-x-hidden">
+      <header className="max-w-4xl mx-auto px-2 py-3 sm:p-6 flex flex-col sm:flex-row items-center sm:justify-between gap-2 sm:gap-0">
+        <div className="flex items-center gap-2 sm:gap-4 w-full sm:w-auto">
+          <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-2xl bg-gradient-to-br from-purple-500 via-pink-500 to-indigo-400 shadow-xl ring-1 ring-white/10"></div>
+          <div className="truncate w-full max-w-[160px] sm:max-w-none">
+            <h1 className="font-semibold tracking-wide text-[1.05rem] xs:text-base sm:text-lg leading-tight break-words whitespace-normal">AMOKOMOWO GANIU</h1>
+            <p className="text-[10px] sm:text-xs opacity-70 break-words whitespace-normal">Frontend Developer — Vibe Coding</p>
           </div>
         </div>
-
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 w-full sm:w-auto justify-end">
           <button
             onClick={toggleTheme}
-            className="relative inline-flex items-center gap-2 py-2 px-3 rounded-full bg-black/10 dark:bg-white/10 backdrop-blur-sm hover:scale-105 transform transition"
+            className="relative inline-flex items-center gap-1 sm:gap-2 py-1.5 sm:py-2 px-2 sm:px-3 rounded-full bg-black/10 dark:bg-white/10 backdrop-blur-sm hover:scale-105 transform transition text-xs sm:text-sm"
             aria-label="Toggle theme"
           >
             <div
-              className={`w-7 h-7 rounded-full flex items-center justify-center shadow-md ${
+              className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center shadow-md ${
                 theme === "dark"
                   ? "bg-gradient-to-br from-gray-800 to-gray-700"
                   : "bg-yellow-100"
@@ -80,20 +79,18 @@ export default function PersonalPortfolio3() {
             >
               {theme === "dark" ? "🌙" : "☀️"}
             </div>
-            <span className="text-sm opacity-80">{theme === "dark" ? "Dark" : "Light"}</span>
+            <span className="opacity-80">{theme === "dark" ? "Dark" : "Light"}</span>
           </button>
-
           <a
             href="#contact"
-            className="group relative inline-flex items-center gap-3 py-2 px-4 rounded-2xl bg-gradient-to-r from-pink-500 to-purple-500 shadow-lg hover:scale-105 focus:outline-none transition"
+            className="group relative inline-flex items-center gap-2 sm:gap-3 py-1.5 sm:py-2 px-3 sm:px-4 rounded-2xl bg-gradient-to-r from-pink-500 to-purple-500 shadow-lg hover:scale-105 focus:outline-none transition text-xs sm:text-sm"
           >
-            <span className="text-sm font-semibold">Let’s talk</span>
+            <span className="font-semibold">Let’s talk</span>
             <span className="absolute -inset-0.5 rounded-2xl blur opacity-30 group-hover:opacity-60" />
           </a>
         </div>
       </header>
-
-      <main className="max-w-4xl mx-auto px-6 pb-20">
+      <main className="max-w-4xl mx-auto px-2 sm:px-6 pb-20">
         {/* HERO */}
         <AnimatePresence>
           <motion.section
@@ -101,59 +98,55 @@ export default function PersonalPortfolio3() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8 }}
-            className="mt-6 rounded-3xl p-8 backdrop-blur-sm bg-gradient-to-b from-gray-100/50 to-white/50 dark:from-white/5 dark:to-transparent"
+            className="mt-4 sm:mt-6 rounded-3xl p-3 sm:p-8 backdrop-blur-sm bg-gradient-to-b from-gray-100/50 to-white/50 dark:from-white/5 dark:to-transparent"
           >
-            <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-3 sm:gap-6">
               <div className="flex-1">
                 <motion.h2
                   initial={{ y: 8, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.15, duration: 0.6 }}
-                  className="text-4xl md:text-5xl font-extrabold tracking-tight"
+                  className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight"
                 >
                   AMOKOMOWO GANIU{" "}
-                  <span className="ml-3 inline-block px-3 py-1 rounded-full text-sm font-medium bg-gradient-to-r from-pink-500 to-indigo-500 text-black/90 shadow-inner">
+                  <span className="ml-2 sm:ml-3 inline-block px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium bg-gradient-to-r from-pink-500 to-indigo-500 text-black/90 shadow-inner">
                     Frontend
                   </span>
                 </motion.h2>
-
                 <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.35 }}
-                  className="mt-4 max-w-xl leading-7 text-gray-700 dark:text-gray-300"
+                  className="mt-2 sm:mt-4 max-w-xs sm:max-w-xl leading-6 sm:leading-7 text-gray-700 dark:text-gray-300 text-xs sm:text-base"
                 >
                   I build polished, accessible interfaces with delightful micro-interactions and reliable architecture. Currently focused on React, performant UI, and designing for real user needs.
                 </motion.p>
-
-                <div className="mt-6 flex gap-3 flex-wrap">
+                <div className="mt-4 sm:mt-6 flex gap-2 sm:gap-3 flex-wrap">
                   <a
                     href="#projects"
-                    className="px-5 py-2 rounded-full font-semibold shadow-lg bg-gradient-to-r from-cyan-400 to-indigo-500 text-black hover:scale-105 hover:shadow-2xl transition"
+                    className="px-3 sm:px-5 py-1.5 sm:py-2 rounded-full font-semibold shadow-lg bg-gradient-to-r from-cyan-400 to-indigo-500 text-black hover:scale-105 hover:shadow-2xl transition text-xs sm:text-base"
                   >
                     View projects
                   </a>
-
                   <a
                     href="#contact"
-                    className="px-5 py-2 rounded-full font-semibold border border-white/10 hover:border-transparent hover:bg-white/5 transition"
+                    className="px-3 sm:px-5 py-1.5 sm:py-2 rounded-full font-semibold border border-white/10 hover:border-transparent hover:bg-white/5 transition text-xs sm:text-base"
                     role="button"
                   >
                     Contact me
                   </a>
                 </div>
               </div>
-
               <motion.div
                 initial={{ scale: 0.98, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.25 }}
-                className="w-56 h-56 rounded-full bg-gradient-to-br from-pink-600 to-indigo-600 shadow-2xl flex items-center justify-center overflow-hidden"
+                className="w-32 h-32 xs:w-40 xs:h-40 sm:w-56 sm:h-56 rounded-full bg-gradient-to-br from-pink-600 to-indigo-600 shadow-2xl flex items-center justify-center overflow-hidden mx-auto md:mx-0"
               >
                 <img
                   src={process.env.PUBLIC_URL + '/ganiu2.jpg'}
                   alt="Ganiu Amokomowo"
-                  className="w-[90%] h-[90%] object-cover rounded-full border-2 border-white dark:border-gray-800 shadow-lg"
+                  className="w-[85%] h-[85%] object-cover rounded-full border-2 border-white dark:border-gray-800 shadow-lg"
                   style={{margin: 'auto', display: 'block'}}
                   loading="lazy"
                 />
