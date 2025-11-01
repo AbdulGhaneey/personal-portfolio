@@ -148,12 +148,15 @@ export default function PersonalPortfolio3() {
                 initial={{ scale: 0.98, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ delay: 0.25 }}
-                className="w-44 h-44 rounded-2xl bg-gradient-to-br from-pink-600 to-indigo-600 shadow-2xl flex items-center justify-center"
+                className="w-56 h-56 rounded-full bg-gradient-to-br from-pink-600 to-indigo-600 shadow-2xl flex items-center justify-center overflow-hidden"
               >
-                <div className="text-center">
-                  <div className="text-3xl font-bold">👋</div>
-                  <div className="text-xs opacity-80">Let’s build vibes</div>
-                </div>
+                <img
+                  src={process.env.PUBLIC_URL + '/ganiu2.jpg'}
+                  alt="Ganiu Amokomowo"
+                  className="w-[90%] h-[90%] object-cover rounded-full border-2 border-white dark:border-gray-800 shadow-lg"
+                  style={{margin: 'auto', display: 'block'}}
+                  loading="lazy"
+                />
               </motion.div>
             </div>
           </motion.section>
